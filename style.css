@@ -102,7 +102,7 @@ header a:hover {
     flex-direction: column;
     height: 90vh;
     color: rgb(124, 186, 49);
-    background-image: url("/images/BolsiCenter\ white.jpg");
+    background-image: url("./images/BolsiCenter\ white.jpg");
     background-repeat: no-repeat;
     background-position: center center;
 }
