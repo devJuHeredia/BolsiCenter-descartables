@@ -1,0 +1,299 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+h1 {
+    font-size: 3.5em;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+span {
+    color: rgb(124, 186, 49);
+    font-weight: bold;
+}
+ul {
+    list-style: none;
+}
+
+li {
+    font-size: 1.25em;
+}
+
+button {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 2px solid grey;
+    box-shadow: 2px 2px 10px grey;
+    color: white;
+    background-color: rgb(124, 186, 49);
+}
+
+button:hover {
+    background-color: rgb(57, 100, 5);
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+header {
+    background-color: rgb(124, 186, 49);
+}
+
+header .logo {
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color:white;
+    font-size: 1.6em;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: grey;
+}
+
+header a:hover {
+    color: white;
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: rgb(124, 186, 49);
+    background-image: url("/images/BolsiCenter\ white.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#hero button {
+    cursor: pointer;
+}
+
+#somos-bolsi .container {
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#productos {
+    text-align: center;
+    padding: 50px;
+    background-color: rgb(233, 228, 228);
+    color: rgb(124, 186, 49);
+}
+
+#productos .carta {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("./images/BolsiCenter\ green.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#productos h3 {
+    color: white;
+    text-shadow: grey 1px 0 10px;
+}
+
+#productos button{
+   cursor: pointer;
+}
+
+#productos .container {
+    margin: auto;
+    align-items: center;
+    align-content: center;
+}
+
+#productos img {
+    width: 250px;
+    margin: auto;
+    padding: 25px;
+}
+
+#horarios  {
+    text-align: center;
+}
+
+#horarios li {
+    margin: 15px 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+#ubicacion {
+    margin: auto;
+    text-align: center;
+    padding: 50px;
+}
+
+iframe {
+    width: 300px;
+    height: 200px;
+}
+
+.icons {
+   margin: auto;
+   text-align: center;
+   padding: 20px;
+   background-color: rgb(124, 186, 49);
+}
+
+.icons a {
+    color: grey;
+}
+
+.icons a:hover {
+    color: white;
+}
+
+footer {
+    background-color: rgb(233, 228, 228);
+}
+
+footer p {
+    margin: 0;
+    padding: 12px;
+    color: rgb(124, 186, 49);
+    font-weight: bold;
+}
+
+footer .container {
+    height: px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width: 650px) {
+
+    #productos img {
+        width: 400px;
+        margin: auto;
+        padding: 25px;
+    }
+
+    #horarios li {
+        text-align: center;
+    }
+
+    iframe {
+        width: 500px;
+        height: 300px;
+    }
+}
+
+@media (min-width: 720px) {
+    header {
+        position: fixed;
+        width: 100%;
+    }
+    header .container {
+        display: row;
+        justify-content: space-between;
+    }
+
+    header nav {
+        flex-direction: row;
+    }
+    #somos-bolsi .container {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #somos-bolsi .text {
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        display: flex;
+        padding-left: 30px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #somos-bolsi .img-container {
+        background-image: url("./images/BolsiCenter-local.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    }
+
+    iframe {
+        width: 600px;
+        height: 500px;
+    }
+}
+
+@media (min-width: 1400px) {
+    #productos {
+        margin: auto;
+    }
+
+    #productos .productos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: row;
+    }
+
+    #productos h3 {
+        margin-top: 0;
+    }
+
+    #productos .carta {
+        background-size: 100%;
+    }
+    
+    #productos img {
+        width: 250px;
+        height: 250px;
+        margin: auto;
+        padding: 20px;
+    }
+}
