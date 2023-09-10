@@ -100,11 +100,11 @@ header a:hover {
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    height: 90vh;
+    height: 80vh;
     color: rgb(124, 186, 49);
     background-image: url("./images/BolsiCenter\ white.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;
+    background-repeat: space;
+    background-position: center;
 }
 
 #hero button {
@@ -147,6 +147,7 @@ header a:hover {
     margin: auto;
     align-items: center;
     align-content: center;
+    margin-bottom: 25px;
 }
 
 #productos img {
@@ -156,6 +157,8 @@ header a:hover {
 }
 
 #horarios  {
+    margin: auto;
+    padding: 25px;
     text-align: center;
 }
 
@@ -169,6 +172,7 @@ header a:hover {
     margin: auto;
     text-align: center;
     padding: 50px;
+    margin-bottom: 25px;
 }
 
 iframe {
